@@ -10,6 +10,7 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
+	//peizhi
     proxyTable: {
       '/api': {
         target: 'http://localhost:3000',
