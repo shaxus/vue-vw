@@ -8,6 +8,7 @@
     <ul>
       <li v-for="(item,index) in arry2" :key="index">{{item}}</li>
     </ul>
+    <p>nihao</p>
     <!--<div v-if="isZhengxu">xianshi</div>-->
     <!--<div v-else>buxianshi</div>-->
 
