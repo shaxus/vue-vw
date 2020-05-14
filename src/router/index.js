@@ -5,7 +5,7 @@ import Router from 'vue-router'
 const Login = () => import('../components/router/Login.vue');
 const Register = () => import('../components/router/Register.vue');
 import SignComponent from '../components/router/SignComponent'
-import ShowInfo from '@/components/router/ShowInfo'
+import ShowInfo from "@/components/router/ShowInfo"
 import LeftContent from '@/components/router/LeftContent'
 import RightContent from '@/components/router/RightContent'
 Vue.use(Router);
@@ -16,13 +16,14 @@ export default new Router({
   routes: [
     {
       path:'/',
-<<<<<<< HEAD
+      component:() => import('../components/map/VueMap.vue')
+    },
+    {
+      path:'/slot',
       component:() => import('../components/slot/SlotDemo.vue')
     },
     {
       path:'/demo',
-=======
->>>>>>> 8a56bcac5a95ae981716dd93f299eb88137ee929
       component:() => import('../components/vuex/Demo.vue')
     },
     {
