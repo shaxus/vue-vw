@@ -16,10 +16,13 @@ export default new Router({
   routes: [
     {
       path:'/',
+<<<<<<< HEAD
       component:() => import('../components/slot/SlotDemo.vue')
     },
     {
       path:'/demo',
+=======
+>>>>>>> 8a56bcac5a95ae981716dd93f299eb88137ee929
       component:() => import('../components/vuex/Demo.vue')
     },
     {

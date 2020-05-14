@@ -11,11 +11,18 @@
     <p>nihao</p>
     <!--<div v-if="isZhengxu">xianshi</div>-->
     <!--<div v-else>buxianshi</div>-->
+<<<<<<< HEAD
     <Test></Test>
     <div>{{textData}}</div>
     <input type="text" v-model="textData">
     <ChildComponent @testChangeName="changeName" v-bind="bookinfo" ></ChildComponent>
 
+=======
+
+    <div>{{textData}}</div>
+    <input type="text" v-model="textData">
+    <ChildComponent @testChangeName="changeName" v-bind="bookinfo" ></ChildComponent>
+>>>>>>> 8a56bcac5a95ae981716dd93f299eb88137ee929
     <!--<SonComponent ref="SonComponent" v-bind="studentinfo" :class="{zhengxu:isZhengxu}" @say="helloSon"></SonComponent>-->
   </div>
 </template>
@@ -24,7 +31,10 @@
   //引入组件
 import SonComponent from '../components/SonComponent.vue'
 import ChildComponent from './ChildComponent.vue'
+<<<<<<< HEAD
 import Test from './slot/Test.vue'
+=======
+>>>>>>> 8a56bcac5a95ae981716dd93f299eb88137ee929
 export default {
   name: 'HelloWorld',
   data () {
@@ -49,7 +59,11 @@ export default {
     }
   },
   //注册组件
+<<<<<<< HEAD
   components:{SonComponent,ChildComponent,Test},
+=======
+  components:{SonComponent,ChildComponent},
+>>>>>>> 8a56bcac5a95ae981716dd93f299eb88137ee929
   /*
   * 当我们需要进行数值计算，并且依赖于其它数据时，应该使用 computed，
   * 因为可以利用 computed 的缓存特性，避免每次获取值时，都要重新计算；

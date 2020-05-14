@@ -14,7 +14,11 @@
           return{
             longitude:0,//经度
             latitude:0,//纬度
+<<<<<<< HEAD
             city:'',
+=======
+            city:''
+>>>>>>> 8a56bcac5a95ae981716dd93f299eb88137ee929
           }
         },
         computed:{
