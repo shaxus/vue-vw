@@ -47,7 +47,7 @@
             this.latitude = position.lat;
             this.longitude = position.lng;
             this.city = position.city;
-            this.setMap();
+            this.setMap(position);
           },
           showErr() {
             console.log("定位失败");
@@ -55,13 +55,15 @@
           },
 //第二部分
           //位置信息在地图上展示
-          setMap() {
+          setMap(position) {
+            let {addr,city} = position;
+            console.log(addr);
             //步骤：定义map变量 调用 qq.maps.Map() 构造函数   获取地图显示容器
             //设置地图中心点
             var myLatlng = new qq.maps.LatLng(this.latitude,this.longitude);
             //定义工厂模式函数
             var myOptions = {
-              zoom: 13,               //设置地图缩放级别
+              zoom: 15,               //设置地图缩放级别
               center: myLatlng,    //设置中心点样式
               mapTypeId: qq.maps.MapTypeId.ROADMAP  //设置地图样式详情参见MapType
             }
@@ -74,11 +76,11 @@
               map: map
             });
             // //给定位的位置添加文本标注
-            // var marker = new qq.maps.Label({
-            //   position: myLatlng,
-            //   map: map,
-            //   content:'这是我当前的位置，偏差有点大，哈哈'
-            // });
+            var label = new qq.maps.Label({
+              position: myLatlng,
+              map: map,
+              content:addr
+            });
           }
         }
     }
