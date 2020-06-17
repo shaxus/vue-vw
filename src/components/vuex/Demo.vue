@@ -14,6 +14,7 @@
           return{
             longitude:0,//经度
             latitude:0,//纬度
+            city:'',
             city:''
           }
         },
