@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <!--<img src="./assets/logo.png">-->
     <!--路由-->
     <!--<router-link to="/Login/1">登录</router-link>-->
     <!--<router-link to="/Login/2">登录</router-link>-->
@@ -9,7 +9,6 @@
     <!--<router-link to="/ShowInfo/LeftContent">1</router-link>-->
     <!--<router-link to="/ShowInfo/RightContent">2</router-link>-->
     <!--<router-view></router-view>-->
-
     <!--状态管理-->
     <router-view></router-view>
   </div>
@@ -28,6 +27,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px;
 }
 </style>

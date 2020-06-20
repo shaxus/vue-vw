@@ -16,6 +16,10 @@ export default new Router({
   routes: [
     {
       path:'/',
+      component:() => import('../components/example/CheckComponent.vue')
+    },
+    {
+      path:'/VueMap',
       component:() => import('../components/map/VueMap.vue')
     },
     {
