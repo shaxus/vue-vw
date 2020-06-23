@@ -16,6 +16,22 @@ export default new Router({
   routes: [
     {
       path:'/',
+      redirect:'/HomePage'
+    },
+    {
+      path:'/HomePage',
+      component:() => import('../NewCapec/view/HomePage.vue')
+    },
+    {
+      path:'/kugou',
+      component:() => import('../components/kugou/Test.vue')
+    },
+    {
+      path:'/RegisterVantComponent',
+      component:() => import('../components/example/RegisterVantComponent.vue')
+    },
+    {
+      path:'/CheckComponent',
       component:() => import('../components/example/CheckComponent.vue')
     },
     {

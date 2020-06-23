@@ -19,6 +19,16 @@ module.exports = {
           '^/api': '/'
         }
 
+      },
+      '/m_kugou':{
+        target: 'http://m.kugou.com/',
+        changeOrigin: true,
+        headers: {
+          referer: 'http://m.kugou.com'
+        },
+        pathRewrite: {
+          '^/m_kugou': '/'
+        }
       }
     },
 
@@ -60,7 +70,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: './',
 
     /**
      * Source Maps
